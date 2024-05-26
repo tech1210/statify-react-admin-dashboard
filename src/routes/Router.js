@@ -4,7 +4,6 @@ import { Navigate } from "react-router-dom";
 import FullLayout from "../layouts/FullLayout.js";
 
 /***** Pages ****/
-
 import Starter from "../views/Starter.js";
 import About from "../views/About.js";
 import Alerts from "../views/ui/Alerts";
@@ -15,6 +14,8 @@ import Grid from "../views/ui/Grid";
 import Tables from "../views/ui/Tables";
 import Forms from "../views/ui/Forms";
 import Breadcrumbs from "../views/ui/Breadcrumbs";
+import LoginPage from "../views/ui/Login.js";
+import SignupPage from "../views/ui/Signup.js";
 
 /*****Routes******/
 
@@ -34,6 +35,8 @@ const ThemeRoutes = [
       { path: "/forms", exact: true, element: <Forms /> },
       { path: "/table", exact: true, element: <Tables /> },
       { path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
+      { path: "/login", exact: true, element: <LoginPage /> },
+      { path: "/signup", exact: true, element: <SignupPage /> },
     ],
   },
 ];

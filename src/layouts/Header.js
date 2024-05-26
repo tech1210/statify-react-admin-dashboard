@@ -102,9 +102,17 @@ const Header = () => {
             <DropdownItem>My Account</DropdownItem>
             <DropdownItem>Edit Profile</DropdownItem>
             <DropdownItem divider />
-            <DropdownItem>My Balance</DropdownItem>
             <DropdownItem>Inbox</DropdownItem>
-            <DropdownItem>Logout</DropdownItem>
+            <DropdownItem>
+              <Link to="/login" className="nav-link">
+                Logout
+              </Link>
+            </DropdownItem>
+            <DropdownItem>
+              <Link to="/signup" className="nav-link">
+                Signup
+              </Link>
+            </DropdownItem>
           </DropdownMenu>
         </Dropdown>
       </Collapse>
